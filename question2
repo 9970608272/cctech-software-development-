@@ -1,0 +1,36 @@
+Question 2 : Calculate the surface of the building exposed to sunlight?
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n,i,j;
+	cout<<"enter no of buidings=";
+	cin>>n;
+	cout<<"enter i=";
+	cin>>i;
+	cout<<"enter j=";
+	cin>>j;
+	int b [1][2]={{1,1}};
+
+	int a[i][j];
+	int surface_area=0;
+	for(int k=0;k<i;++k)
+	{
+		for(int l=0;l<j;++l)
+		{
+			cin>>a[k][l];
+		}
+	}
+	for(int k=0;k<i;++k)
+		{
+			for(int l=0;l<j;++l)
+			{
+				if(n==1 && (b[0][0]==1 && b[0][1]==1))
+				{
+				  surface_area=a[0][0]+a[1][0];
+				}
+			}
+		}
+	cout<<surface_area;
+}
